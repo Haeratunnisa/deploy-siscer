@@ -66,7 +66,7 @@ m = DecisionTreeClassifier()
 m.fit(X_train_ss_scaled, y_train)
 y_pred_dt = m.predict(X_test)
 
-st.write("Dengan Menggunakan Deciision Tree Nilai Akurasinya Adalah:")
+st.write("Dengan Menggunakan Decision Tree Nilai Akurasinya Adalah:")
 st.write(accuracy_score(y_test, y_pred_dt))
 
 st.write("# Masukkan data")
