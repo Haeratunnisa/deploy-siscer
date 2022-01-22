@@ -73,10 +73,10 @@ st.write("# Masukkan data")
 
 
 form = st.form(key='my-form')
-inputGender = form.number_input("Jenis kelamin: ", 0)
+inputGender = form.number_input("Jenis kelamin (1 = male, 0 = female): ", 0)
 inputAge = form.number_input("Umur: ", 0)
 inputHyper = form.number_input("Apakah mempunyai hipertensi? (1 = ya, 0 = tidak): ", 0)
-inputHD = form.number_input("Apakah mempunyai penyakit jantung (1 = ya, 0 = tidak): ", 0)
+inputHD = form.number_input("Apakah mempunyai penyakit jantung? (1 = ya, 0 = tidak): ", 0)
 inputGlucose = form.number_input("Rata-rata kadar glukosa: ", 0)
 inputBMI = form.number_input("BMI: ", 0)
 submit = form.form_submit_button('Submit')
