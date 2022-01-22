@@ -90,13 +90,8 @@ st.write('Tekan Submit Untuk Melihat Hasil Prediksi')
 
 if submit:
     prediction = m.predict(scaledData)
-    if prediction > 1 :
-        result = 1
-    elif prediction < 0 :
-        result = 0
-    else :
-        result = prediction[0]
-    st.write(result*100, "Percent")
-
-
-
+    if prediction == 1 :
+        result = 'Stroke'
+    else:
+        result = 'Sehat'
+    st.write(result)
