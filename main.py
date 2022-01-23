@@ -47,7 +47,7 @@ cols = ['gender']
 for col in cols:
   df[col] = en.fit_transform(df[col])
 
-# handling imbalanced data
+# menentukan parameter x dan y
 x = df.drop(['stroke', 'ever_married', 'work_type', 'Residence_type', 'smoking_status'], axis = 'columns')
 y = df['stroke']
 
